@@ -6,10 +6,11 @@ import Home from './components/Home/Home';
 import NotFound from './NotFound/NotFound';
 import AuthProvider from './contexts/AuthProvider';
 
-function App() {
+function App ()
+{
   return (
     <div className="App">
-
+      {/* Auth provider added */}
       <AuthProvider>
         <Router>
 
