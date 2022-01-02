@@ -8,10 +8,11 @@ import AuthProvider from './contexts/AuthProvider';
 import Login from './Login/Login/Login';
 import Register from './Login/Register/Register';
 
-function App() {
+function App ()
+{
   return (
     <div className="App">
-
+      {/* Auth provider added */}
       <AuthProvider>
         <Router>
 
