@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Sandwish",
+        "price": 250,
+        "img":"https://i.ibb.co/s9xvtgh/breakfast1.png",
+        "details":"A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread, or more generally any dish wherein bread serves as a container or wrapper for another food type."
+    },
+    {
+        "name": "Pizza",
+        "price": 250,
+        "img": "https://i.ibb.co/kBXbjqS/breakfast2.png",
+        "details":"A pizza is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread, or more generally any dish wherein bread serves as a container or wrapper for another food type."
+    },
+    {
+        "name": "Hotdog",
+        "price": 250,
+        "img":"https://i.ibb.co/jkzSwRg/breakfast3.png",
+        "details":"A hot dog is a food consisting of a grilled or steamed sausage served in the slit of a partially sliced bun. The term hot dog can also refer to the sausage itself. The sausage used is a wiener or a frankfurter."
+    }
+]
