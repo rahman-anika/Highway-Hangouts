@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import NotFound from './NotFound/NotFound';
 import AuthProvider from './contexts/AuthProvider';
+import Login from './Login/Login/Login';
+import Register from './Login/Register/Register';
 
 function App() {
   return (
@@ -29,12 +31,12 @@ function App() {
 
             {/* Route for login  */}
             <Route path="/login">
-              {/* <Login></Login> */}
+              <Login></Login>
             </Route>
 
             {/* Route for register  */}
             <Route path="/register">
-              {/* <Register></Register> */}
+              <Register></Register>
             </Route>
 
 
