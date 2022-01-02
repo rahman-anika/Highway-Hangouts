@@ -20,7 +20,6 @@ const Header = () => {
                     </Navbar.Brand>
                     {/* website name and icon ends */}
 
-
                     {/* routing hashlink starts */}
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
