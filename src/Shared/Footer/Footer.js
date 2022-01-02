@@ -5,6 +5,7 @@ import stripe from './../images/stripe.png';
 import { BsGeoAlt, BsEnvelope, BsTelephone } from "react-icons/bs";
 import { FaQuoteRight, FaFacebook, FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa";
 
+/* footer section */
 const Footer = () =>
 {
     return (
