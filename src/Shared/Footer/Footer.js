@@ -5,7 +5,9 @@ import stripe from './../../images/logo/stripe.png';
 import { BsGeoAlt, BsEnvelope, BsTelephone } from "react-icons/bs";
 import { FaQuoteRight, FaFacebook, FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa";
 
-/* footer section */
+/*------------------------------------------------------------------------- 
+Implement Footer of the Highway Hangouts with all necessary information, navigation, and contact info.
+---------------------------------------------------------------------------*/
 const Footer = () =>
 {
     return (
