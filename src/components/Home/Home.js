@@ -1,10 +1,12 @@
 import React from 'react';
+import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
 import Banner from '../Banner/Banner';
 
 
 
-const Home = () => {
+const Home = () =>
+{
     return (
         <div id="home">
 
@@ -19,7 +21,7 @@ const Home = () => {
 
 
             {/* footer section starts */}
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
             {/* footer section ends */}
 
 

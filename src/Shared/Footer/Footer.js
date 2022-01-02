@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Image, Nav, Navbar } from 'react-bootstrap';
-import logo from './../images/logo.png';
-import stripe from './../images/stripe.png';
+import logo from './../../images/logo/logo.png';
+import stripe from './../../images/logo/stripe.png';
 import { BsGeoAlt, BsEnvelope, BsTelephone } from "react-icons/bs";
 import { FaQuoteRight, FaFacebook, FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa";
 
