@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 
 const Breakfast = ({ breakfast }) => {
     const { name, img, details, price } = breakfast;
@@ -13,6 +13,7 @@ const Breakfast = ({ breakfast }) => {
                     <Card.Text>
                         {details}
                     </Card.Text>
+                    <Button variant="success">Purshase Now</Button>
                 </Card.Body>
             </Card>
         </>
