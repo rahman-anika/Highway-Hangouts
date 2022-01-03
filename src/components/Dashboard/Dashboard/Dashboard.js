@@ -17,6 +17,8 @@ import MyRecipes from "../MyRecipes/MyRecipes";
 import MyCredits from "../MyCredits/MyCredits";
 import MyBooking from '../MyBooking/MyBooking';
 import ManageRecipes from "../ManageRecipes/ManageRecipes";
+import AllBooking from "../AllBooking/AllBooking";
+
 
 
 
@@ -124,7 +126,7 @@ const Dashboard = () => {
                             </AdminRoute>
 
                             <AdminRoute exact path={`${path}/all-booking`}>
-                                {/* <AllBooking></AllBooking> */}
+                                <AllBooking></AllBooking>
                             </AdminRoute>
 
                         </Switch>
