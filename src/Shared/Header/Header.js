@@ -3,10 +3,10 @@ import { Button, Container, Image, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { HashLink } from 'react-router-hash-link';
-import { FaQuoteRight } from 'react-icons/fa';
 import logo from './../../images/logo/logo.png';
 
-const Header = () => {
+const Header = () =>
+{
 
     const { user, logout } = useAuth();
 
@@ -21,13 +21,10 @@ const Header = () => {
                         <span style={{ color: 'orange', fontWeight: 'bold' }}> <i class="fas fa-utensils"></i> Highway Hangouts</span>
                     </Navbar.Brand> */}
 
-                    <Nav className="flex-column align-items-center my-3">
+                    <Nav className="flex-column align-items-center">
                         <Navbar.Brand href="#home" className="mx-auto">
                             <Image src={logo} width="180px" alt="" fluid />
                         </Navbar.Brand>
-                        <div className="mt-1 text-white">
-                            <FaQuoteRight className='fs-6' />&nbsp; Making moments special...
-                        </div>
                     </Nav>
 
 
@@ -35,7 +32,7 @@ const Header = () => {
 
                     {/* routing hashlink starts */}
                     <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
+                    <Navbar.Collapse className="justify-content-end text-center">
 
                         {/* homepage section starts */}
                         <Nav.Link as={HashLink} to="/home#home"> <span style={{ color: 'orange', fontWeight: 'bold' }}> Home </span> </Nav.Link>

@@ -9,7 +9,8 @@ import about6 from '../../images/about/salad.png';
 import about7 from '../../images/about/headset.png';
 
 
-const About = () => {
+const About = () =>
+{
     return (
 
         // about section starts 
@@ -18,7 +19,7 @@ const About = () => {
 
             {/* Why choose section starts  */}
 
-            <div className="col-md-12 ">
+            <div className="col-md-12 text-center my-4">
                 <h3 className="about-title-main fw-bold">Why Choose Us</h3>
                 <small className="about-title-main fw-bold">
                     If you have passion for cooking, then it is the right place for you!

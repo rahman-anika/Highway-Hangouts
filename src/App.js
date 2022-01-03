@@ -8,10 +8,12 @@ import AuthProvider from './contexts/AuthProvider';
 import Login from './Login/Login/Login';
 import Register from './Login/Register/Register';
 import AllBreakfast from './components/Menu/AllBreakfast/AllBreakfast';
+import Confirm from './components/Reservation/Confirm';
 
-function App() {
+function App ()
+{
   return (
-    <div className="App">
+    <div>
       {/* Auth provider added */}
       <AuthProvider>
         <Router>
@@ -29,6 +31,9 @@ function App() {
               <Home></Home>
             </Route>
 
+            <Route path="/booking-confirm">
+              <Confirm />
+            </Route>
 
             {/* Route for login  */}
             <Route path="/login">
