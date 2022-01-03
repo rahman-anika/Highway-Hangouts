@@ -20,9 +20,7 @@ const Home = () => {
             {/* banner section ends */}
 
 
-            {/* chef section starts */}
-            {/* <Chef></Chef> */}
-            {/* chef section ends */}
+
 
             {/* menu section starts */}
             <Menu></Menu>
