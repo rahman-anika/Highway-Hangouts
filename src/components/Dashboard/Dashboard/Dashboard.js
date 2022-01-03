@@ -10,7 +10,7 @@ import {
 
 import useAuth from "../../../hooks/useAuth";
 import DashboardHome from "../DashboardHome/DashboardHome";
-import AdminRoute from './../../Login/AdminRoute/AdminRoute';
+import AdminRoute from '../../../Login/AdminRoute/AdminRoute';
 import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import "./Dashboard.css";
 import MyRecipes from "../MyRecipes/MyRecipes";
@@ -36,20 +36,18 @@ const Dashboard = () => {
 
 
 
-                            {!admin && <Link to={`${url}/pay`}>
-                                <li className="dashboard-menu mt-5">Pay</li>
-                            </Link>}
 
-                            {!admin && <Link to={`${url}/myCourses`}>
-                                <li className="dashboard-menu mt-5">My Enrolled Course(s)</li>
-                            </Link>}
 
                             {!admin && <Link to={`${url}/myRecipes`}>
                                 <li className="dashboard-menu mt-5">My Recipe(s)</li>
                             </Link>}
 
-                            {!admin && <Link to={`${url}/addReviews`}>
-                                <li className="dashboard-menu mt-5">Add Review</li>
+                            {!admin && <Link to={`${url}/myCredits`}>
+                                <li className="dashboard-menu mt-5">My Credit(s)</li>
+                            </Link>}
+
+                            {!admin && <Link to={`${url}/my-booking`}>
+                                <li className="dashboard-menu mt-5">My Booking(s)</li>
                             </Link>}
 
 
@@ -57,18 +55,7 @@ const Dashboard = () => {
 
 
 
-                            {admin && (
-                                <Link to={`${url}/manageAllCourses`}>
-                                    <li className="dashboard-menu mt-5">Manage All Enrolled Course(s)</li>
-                                </Link>
-                            )}
 
-
-                            {admin && (
-                                <Link to={`${url}/addCourses`}>
-                                    <li className="dashboard-menu mt-5">Add Course</li>
-                                </Link>
-                            )}
 
 
 
@@ -80,6 +67,12 @@ const Dashboard = () => {
                             {admin && <Link to={`${url}/manageRecipes`}>
                                 <li className="dashboard-menu mt-5">Manage Recipe(s)</li>
                             </Link>}
+
+                            {admin && <Link to={`${url}/all-booking`}>
+                                <li className="dashboard-menu mt-5">Manage All Booking(s)</li>
+                            </Link>}
+
+
                             <br />
                             <br />
 
@@ -114,6 +107,10 @@ const Dashboard = () => {
                                 <MyCredits></MyCredits>
                             </Route>
 
+                            <Route exact path={`${path}/my-booking`}>
+                                {/* <MyBooking></MyBooking> */}
+                            </Route>
+
 
 
 
@@ -121,10 +118,12 @@ const Dashboard = () => {
                                 <MakeAdmin></MakeAdmin>
                             </AdminRoute>
 
-
-
                             <AdminRoute exact path={`${path}/manageRecipes`}>
                                 <ManageRecipes></ManageRecipes>
+                            </AdminRoute>
+
+                            <AdminRoute exact path={`${path}/all-booking`}>
+                                {/* <AllBooking></AllBooking> */}
                             </AdminRoute>
 
                         </Switch>
