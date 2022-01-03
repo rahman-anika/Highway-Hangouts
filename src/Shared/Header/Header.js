@@ -3,7 +3,8 @@ import { Button, Container, Image, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { HashLink } from 'react-router-hash-link';
-// import logo from './../../images/logo/logo.png';
+import { FaQuoteRight } from 'react-icons/fa';
+import logo from './../../images/logo/logo.png';
 
 const Header = () => {
 
@@ -22,10 +23,10 @@ const Header = () => {
 
                     <Nav className="flex-column align-items-center my-3">
                         <Navbar.Brand href="/home" className="mx-auto">
-                            <Image src="" width="180px" alt="" fluid />
+                            <Image src={logo} width="180px" alt="" fluid />
                         </Navbar.Brand>
                         <div className="my-2 text-white">
-                            {/* <FaQuoteRight className='fs-3' />&nbsp; Making moments special... */}
+                            <FaQuoteRight className='fs-3' />&nbsp; Making moments special...
                         </div>
                     </Nav>
 
