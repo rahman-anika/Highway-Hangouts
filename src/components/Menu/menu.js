@@ -9,7 +9,7 @@ const menu = () => {
             <Container id="menu" style={{ color: "orange" }}>
                 <h2 className='my-4'>Choose Menu</h2>
                 <Link to="/allbreakfast"><button className="menu-btn" >Breakfast</button></Link>
-                <button className="menu-btn" variant="success">Lunch</button>
+                <Link to="/alllunch"><button className="menu-btn" variant="success">Lunch</button></Link>
                 <button className="menu-btn" variant="secondary">Dinner</button>
             </Container>
         </>
