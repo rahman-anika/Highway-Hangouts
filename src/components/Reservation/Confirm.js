@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import Header from '../../Shared/Header/Header';
 import Footer from '../../Shared/Footer/Footer';
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import Swal from 'sweetalert2';
 
 function Confirm ()
 {
@@ -21,6 +22,11 @@ function Confirm ()
     const onSubmit = data =>
     {
         console.log(data);
+        Swal.fire(
+            'Thank You!',
+            `Your table booking has been confirmed at ${reservation.time} on ${reservation.date}.`,
+            'success'
+        )
     };
 
     return (
@@ -41,34 +47,34 @@ function Confirm ()
                         <Row className="mb-3">
                             <Form.Group as={Col} controlId="formGridEmail">
                                 <Form.Label>Booking Name</Form.Label>
-                                <Form.Control type="text" {...register("booking_name")} placeholder="Enter your name" />
+                                <Form.Control type="text" {...register("booking_name")} placeholder="Enter your name" required />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridPassword">
                                 <Form.Label>Booking Email</Form.Label>
-                                <Form.Control type="email" {...register("booking_email")} placeholder="Enter your email" />
+                                <Form.Control type="email" {...register("booking_email")} placeholder="Enter your email" required />
                             </Form.Group>
                         </Row>
 
                         <Form.Group className="mb-3" controlId="formGridAddress1">
                             <Form.Label>Add special request</Form.Label>
-                            <Form.Control {...register("request")} placeholder="If you have any special requirement. Please tell us..." />
+                            <Form.Control {...register("request")} placeholder="If you have any special requirement. Please tell us..." required />
                         </Form.Group>
 
                         <Row className="mb-3">
                             <Form.Group as={Col} controlId="formGridCity">
                                 <Form.Label>Booking Date</Form.Label>
-                                <Form.Control {...register("booking_date")} defaultValue={reservation.date} />
+                                <Form.Control {...register("booking_date")} defaultValue={reservation.date} required />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridState">
                                 <Form.Label>Booking Time</Form.Label>
-                                <Form.Control {...register("booking_time")} defaultValue={reservation.time} />
+                                <Form.Control {...register("booking_time")} defaultValue={reservation.time} required />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridZip">
                                 <Form.Label>Number of Guest</Form.Label>
-                                <Form.Control {...register("guest_number")} type='number' max={6} min={1} defaultValue={reservation.guest} />
+                                <Form.Control {...register("guest_number")} type='number' max={6} min={1} defaultValue={reservation.guest} required />
                             </Form.Group>
                         </Row>
 
