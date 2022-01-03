@@ -23,7 +23,7 @@ function Booking ()
         <>
             <h2 style={{ color: "orange" }} className='text-center mt-4'>
                 <FaQuoteLeft className='fs-4' />
-                &nbsp;&nbsp;Book your Table with us&nbsp;&nbsp;
+                &nbsp;&nbsp;Book your Table with Highway Hangouts&nbsp;&nbsp;
                 <FaQuoteRight className='fs-4' />
             </h2>
             <div className='mt-4 mb-5 d-flex justify-content-center'>
