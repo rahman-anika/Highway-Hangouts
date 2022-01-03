@@ -7,13 +7,16 @@ import Header from '../../Shared/Header/Header';
 import Footer from '../../Shared/Footer/Footer';
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Swal from 'sweetalert2';
+import useAuth from '../../hooks/useAuth';
 
 function Confirm ()
 {
+    const { user } = useAuth();
     const [reservation, setReservation] = useState({});
 
-    const location = useLocation();
     const { register, handleSubmit, reset } = useForm();
+
+    const location = useLocation();
 
     useEffect(() =>
     {
@@ -73,12 +76,12 @@ function Confirm ()
                         <Row className="mb-3">
                             <Form.Group as={Col} controlId="formGridEmail">
                                 <Form.Label>Booking Name</Form.Label>
-                                <Form.Control type="text" {...register("booking_name")} placeholder="Enter your name" required />
+                                <Form.Control type="text" {...register("booking_name")} defaultValue={user.displayName} required />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridPassword">
                                 <Form.Label>Booking Email</Form.Label>
-                                <Form.Control type="email" {...register("booking_email")} placeholder="Enter your email" required />
+                                <Form.Control type="email" {...register("booking_email")} defaultValue={user.email} required />
                             </Form.Group>
                         </Row>
 

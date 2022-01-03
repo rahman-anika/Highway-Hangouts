@@ -77,23 +77,26 @@ const Header = () =>
                         }
 
 
-                        {/* if user logged in then shows logout button otherwise shows login button*/}
-
-                        {user?.email ?
-                            <Button onClick={logout} variant="light">Logout</Button>
-
-                            :
-                            <Nav.Link as={Link} to="/login"><span style={{ color: 'orange', fontWeight: 'bold' }}> Login </span></Nav.Link>}
-
                         {/* showing logged in user's display name  */}
                         <Navbar.Text>
                             <span style={{ color: 'orange', fontWeight: 'bold' }}>
                                 Signed in as:
+                                <br />
                                 <a href="#login">
-                                    {user?.displayName}</a>
+                                    {user?.displayName}
+                                </a>
 
                             </span>
                         </Navbar.Text>
+
+                        {/* if user logged in then shows logout button otherwise shows login button*/}
+
+                        {user?.email ?
+                            <Button onClick={logout} variant="outline-light" className='ms-3'>Logout</Button>
+
+                            :
+                            <Nav.Link as={Link} to="/login"><span style={{ color: 'orange', fontWeight: 'bold' }}> Login </span></Nav.Link>
+                        }
 
 
                     </Navbar.Collapse>

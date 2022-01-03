@@ -3,9 +3,10 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import notfound from '../images/notFound/notFound.jpg';
 
-const NotFound = () => {
+const NotFound = () =>
+{
     return (
-        <div>
+        <div className='text-center'>
             <img style={{ width: '50%' }} src={notfound} alt="" />
             <br />
             <br />
