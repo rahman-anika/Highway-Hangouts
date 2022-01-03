@@ -14,6 +14,7 @@ import RecipeDetails from './components/RecipeDetails/RecipeDetails';
 import SubmitRecipe from './components/SubmitRecipe/SubmitRecipe';
 import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
 import Confirm from './components/Reservation/Confirm';
+import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 
 
 
@@ -48,7 +49,7 @@ function App() {
               <Register></Register>
             </Route>
 
-            {/* Route for booking confirm  */}
+            {/* PrivateRoute for booking confirm  */}
             <PrivateRoute path="/booking-confirm">
               <Confirm></Confirm>
             </PrivateRoute>
@@ -72,7 +73,7 @@ function App() {
               <AllRecipes></AllRecipes>
             </Route>
 
-            {/* PrivateRoute for all products  */}
+            {/* PrivateRoute for adding recipe  */}
             <PrivateRoute path="/submitRecipe">
               <SubmitRecipe></SubmitRecipe>
             </PrivateRoute>
@@ -82,6 +83,12 @@ function App() {
             <Route path="/recipeDetails/:serviceId">
               <RecipeDetails></RecipeDetails>
             </Route>
+
+
+            {/* PrivateRoute for adding recipe  */}
+            <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
 
 
             {/* Route for 404  */}
