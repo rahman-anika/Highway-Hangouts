@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../Shared/Header/Header';
 import About from '../About/About';
 import Banner from '../Banner/Banner';
-import Chef from '../Chef/Chef';
+
 
 
 
@@ -19,9 +19,7 @@ const Home = () => {
             {/* banner section ends */}
 
 
-            {/* chef section starts */}
-            <Chef></Chef>
-            {/* chef section ends */}
+
 
             {/* about section starts */}
             <About></About>
