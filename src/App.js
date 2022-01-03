@@ -12,6 +12,7 @@ import AllRecipes from './components/AllRecipes/AllRecipes';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails';
 import SubmitRecipe from './components/SubmitRecipe/SubmitRecipe';
 import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
+import Confirm from './components/Reservation/Confirm';
 
 
 
@@ -45,6 +46,12 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
+
+            {/* Route for booking confirm  */}
+            <PrivateRoute path="/booking-confirm">
+              <Confirm></Confirm>
+            </PrivateRoute>
+
 
             <Route path="/allbreakfast">
               <AllBreakfast></AllBreakfast>

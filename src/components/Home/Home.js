@@ -6,6 +6,8 @@ import Banner from '../Banner/Banner';
 import Chef from '../Chef/Chef';
 import Menu from '../Menu/menu';
 import Recipe from '../Recipe/Recipe';
+import Booking from '../Reservation/Booking';
+
 
 
 
@@ -21,6 +23,11 @@ const Home = () => {
             {/* banner section starts */}
             <Banner></Banner>
             {/* banner section ends */}
+
+            {/* booking section starts */}
+            <Booking></Booking>
+            {/* booking section ends */}
+
 
             {/* menu section starts */}
             <Menu></Menu>
