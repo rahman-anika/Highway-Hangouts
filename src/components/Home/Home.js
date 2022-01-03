@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
+import About from '../About/About';
 import Banner from '../Banner/Banner';
 
 
@@ -18,7 +19,9 @@ const Home = () =>
             <Banner></Banner>
             {/* banner section ends */}
 
-
+            {/* about section starts */}
+            <About></About>
+            {/* about section ends */}
 
             {/* footer section starts */}
             <Footer></Footer>
