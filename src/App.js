@@ -7,9 +7,9 @@ import NotFound from './NotFound/NotFound';
 import AuthProvider from './contexts/AuthProvider';
 import Login from './Login/Login/Login';
 import Register from './Login/Register/Register';
+import AllBreakfast from './components/Menu/AllBreakfast/AllBreakfast';
 
-function App ()
-{
+function App() {
   return (
     <div className="App">
       {/* Auth provider added */}
@@ -40,7 +40,10 @@ function App ()
               <Register></Register>
             </Route>
 
+            <Route path="/allbreakfast">
+              <AllBreakfast></AllBreakfast>
 
+            </Route>
 
 
             {/* Route for 404  */}
