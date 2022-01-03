@@ -22,11 +22,11 @@ const Header = () => {
                     </Navbar.Brand> */}
 
                     <Nav className="flex-column align-items-center my-3">
-                        <Navbar.Brand href="/home" className="mx-auto">
+                        <Navbar.Brand href="#home" className="mx-auto">
                             <Image src={logo} width="180px" alt="" fluid />
                         </Navbar.Brand>
-                        <div className="my-2 text-white">
-                            <FaQuoteRight className='fs-3' />&nbsp; Making moments special...
+                        <div className="mt-1 text-white">
+                            <FaQuoteRight className='fs-6' />&nbsp; Making moments special...
                         </div>
                     </Nav>
 
