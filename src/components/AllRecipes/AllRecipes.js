@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './AllRecipes.css';
 import { Link } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
-import useAuth from '../../../hooks/useAuth';
+import useAuth from '../../hooks/useAuth';
 import Header from '../../Shared/Header/Header';
 import Footer from '../../Shared/Footer/Footer';
 

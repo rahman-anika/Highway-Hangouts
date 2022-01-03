@@ -8,6 +8,12 @@ import AuthProvider from './contexts/AuthProvider';
 import Login from './Login/Login/Login';
 import Register from './Login/Register/Register';
 import AllBreakfast from './components/Menu/AllBreakfast/AllBreakfast';
+import AllRecipes from './components/AllRecipes/AllRecipes';
+import RecipeDetails from './components/RecipeDetails/RecipeDetails';
+import SubmitRecipe from './components/SubmitRecipe/SubmitRecipe';
+import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
+
+
 
 function App() {
   return (
@@ -43,6 +49,22 @@ function App() {
             <Route path="/allbreakfast">
               <AllBreakfast></AllBreakfast>
 
+            </Route>
+
+            {/* Route for all recipes  */}
+            <Route path="/recipes">
+              <AllRecipes></AllRecipes>
+            </Route>
+
+            {/* PrivateRoute for all products  */}
+            <PrivateRoute path="/submitRecipe">
+              <SubmitRecipe></SubmitRecipe>
+            </PrivateRoute>
+
+
+            {/* Route for showing recipe details  */}
+            <Route path="/recipeDetails/:serviceId">
+              <RecipeDetails></RecipeDetails>
             </Route>
 
 

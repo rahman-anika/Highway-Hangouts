@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 // import { Col, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 // import { useParams } from 'react-router';
-import useAuth from '../../../hooks/useAuth';
+import useAuth from '../../hooks/useAuth';
 import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
-import recipe1 from '../../../images/recipe/recipe 2.gif';
+import recipe1 from '../../images/recipe/recipe 2.gif';
 import './SubmitRecipe.css';
 
 const SubmitRecipe = () => {
