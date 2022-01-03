@@ -70,7 +70,7 @@ const Chef = () => {
             <div className="row">
 
                 {services?.map((service) => (
-                    <div key={service._id} className="col-md-6 col-sm-12">
+                    <div key={service._id} className="col-md-6 col-lg-3 col-sm-12">
                         <div className="cart service p-3 m-2 border border">
 
                             {/* image showing starts  */}
@@ -84,7 +84,7 @@ const Chef = () => {
 
 
 
-                            <h6 className="mt-4 service-info">Duration: {service.designation}</h6>
+                            <h6 className="mt-4 service-info">{service.designation}</h6>
 
 
                             {/* contact icon starts */}
