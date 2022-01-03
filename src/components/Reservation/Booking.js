@@ -18,7 +18,7 @@ function Booking() {
     };
 
     return (
-        <>
+        <div id="makeReservation">
             <h2 style={{ color: "orange" }} className='text-center mt-4'>
                 <FaQuoteLeft className='fs-4' />
                 &nbsp;&nbsp;Book your Table with Highway Hangouts&nbsp;&nbsp;
@@ -53,7 +53,7 @@ function Booking() {
                     </Container>
                 </Navbar>
             </div>
-        </>
+        </div>
     )
 }
 

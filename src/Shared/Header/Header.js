@@ -44,20 +44,28 @@ const Header = () => {
                         <Nav.Link as={HashLink} to="/home#home"> <span style={{ color: 'orange', fontWeight: 'bold' }}> Home </span> </Nav.Link>
                         {/* homepage section ends */}
 
-                        {/* services section starts */}
-                        <Nav.Link as={HashLink} to="/home#recipes"><span style={{ color: 'orange', fontWeight: 'bold' }}> Recipes </span></Nav.Link>
-                        {/* services section ends */}
 
-                        {/* services section starts */}
+                        {/* make reservation section starts */}
+                        <Nav.Link as={HashLink} to="/home#makeReservation"><span style={{ color: 'orange', fontWeight: 'bold' }}> Make Reservation </span></Nav.Link>
+                        {/* make reservation section ends */}
+
+
+
+                        {/* menu section starts */}
                         <Nav.Link as={HashLink} to="/home#menu"><span style={{ color: 'orange', fontWeight: 'bold' }}> Menu </span></Nav.Link>
-                        {/* services section ends */}
+                        {/* menu section ends */}
 
-                        {/* Explore products section starts */}
+
+                        {/* recipes section starts */}
+                        <Nav.Link as={HashLink} to="/home#recipes"><span style={{ color: 'orange', fontWeight: 'bold' }}> Recipes </span></Nav.Link>
+                        {/* recipes section ends */}
+
+                        {/* share recipe section starts */}
                         < Nav.Link as={Link} className="item m-2 p-2" to="/submitRecipe"><span style={{ color: 'orange', fontWeight: 'bold' }}> Share Recipe </span></Nav.Link>
-                        {/* Explore products section ends  */}
+                        {/* share recipe section ends  */}
 
                         {/* reviews section starts */}
-                        <Nav.Link as={HashLink} to="/home#reviews"><span style={{ color: 'orange', fontWeight: 'bold' }}> Reviews </span></Nav.Link>
+                        {/* <Nav.Link as={HashLink} to="/home#reviews"><span style={{ color: 'orange', fontWeight: 'bold' }}> Reviews </span></Nav.Link> */}
                         {/* reviews section ends */}
 
                         {/* chef section starts */}
