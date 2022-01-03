@@ -50,7 +50,7 @@ function Confirm ()
             {
                 if (data.insertedId) {
                     Swal.fire(
-                        `Thank You, ${user.displayName}`,
+                        `Thank You, ${user.displayName}!`,
                         `Your table booking has been confirmed at ${reservation.time} on ${reservation.date}.`,
                         'success'
                     );

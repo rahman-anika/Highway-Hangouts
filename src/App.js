@@ -9,6 +9,9 @@ import Login from './Login/Login/Login';
 import Register from './Login/Register/Register';
 import AllBreakfast from './components/Menu/AllBreakfast/AllBreakfast';
 import Confirm from './components/Reservation/Confirm';
+import Dashboard from './components/Dashboard/Dashboard';
+import AllBooking from './components/Dashboard/AllBooking/AllBooking';
+import MyBooking from './components/Dashboard/MyBooking/MyBooking';
 
 function App ()
 {
@@ -47,7 +50,18 @@ function App ()
 
             <Route path="/allbreakfast">
               <AllBreakfast></AllBreakfast>
+            </Route>
 
+            <Route path="/dashboard">
+              <Dashboard></Dashboard>
+            </Route>
+
+            <Route path="/all-booking">
+              <AllBooking></AllBooking>
+            </Route>
+
+            <Route path="/my-booking">
+              <MyBooking></MyBooking>
             </Route>
 
 
