@@ -27,10 +27,12 @@ function Confirm() {
             book['booking_date'] = reservation.date;
             book['booking_time'] = reservation.time;
             book['guest_number'] = reservation.guest;
+            book['status'] = 'pending';
         }
         else {
             book['booking_date'] = reservation.date;
             book['booking_time'] = reservation.time;
+            book['status'] = 'pending';
         }
 
         fetch('http://localhost:5000/booking', {
@@ -44,7 +46,7 @@ function Confirm() {
             .then(data => {
                 if (data.insertedId) {
                     Swal.fire(
-                        'Thank You!',
+                        `Thank You, ${user.displayName}!`,
                         `Your table booking has been confirmed at ${reservation.time} on ${reservation.date}.`,
                         'success'
                     );
