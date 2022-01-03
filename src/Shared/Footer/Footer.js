@@ -8,8 +8,7 @@ import { FaQuoteRight, FaFacebook, FaGoogle, FaInstagram, FaTwitter } from "reac
 /*------------------------------------------------------------------------- 
 Implement Footer of the Highway Hangouts with all necessary information, navigation, and contact info.
 ---------------------------------------------------------------------------*/
-const Footer = () =>
-{
+const Footer = () => {
     return (
         <>
             <Navbar bg="dark" variant="dark">
@@ -18,12 +17,12 @@ const Footer = () =>
                         <Navbar.Brand href="/home" className="mx-auto">
                             <Image src={logo} width="250px" alt="" fluid />
                         </Navbar.Brand>
-                        <div className="my-2 text-white">
+                        <div className="my-2" style={{ color: "orange" }}>
                             <FaQuoteRight className='fs-3' />&nbsp; Making moments special...
                         </div>
                     </Nav>
                     <Nav className="flex-column text-center">
-                        <h4 className="text-white fs-5">Links</h4>
+                        <h4 className="fs-5" style={{ color: "orange" }}>Links</h4>
                         <Nav.Link to="/home" className="m-0 p-0">
                             Home
                         </Nav.Link>
@@ -40,14 +39,14 @@ const Footer = () =>
                             FAQ
                         </Nav.Link>
                     </Nav>
-                    <Nav className="flex-column align-items-center mt-3">
-                        <h4 className="text-white fs-5 mb-0 border-bottom">Contact us</h4>
+                    <Nav className="flex-column align-items-center my-3">
+                        <h4 className="fs-5 mb-0 border-bottom" style={{ color: "orange" }}>Contact us</h4>
                         <div className="fs-6 lh-sm text-white mt-3">
                             <p className='mb-1'><BsGeoAlt />&nbsp;&nbsp;92/A, Dhaka - 1000, Bangladesh</p>
                             <p className='mb-1'><BsEnvelope />&nbsp;&nbsp;contact@highwayhangouts.com</p>
                             <p className='mb-0'><BsTelephone />&nbsp;&nbsp;+880123456789, +88087654321</p>
                         </div>
-                        <h4 className="text-white mt-2 fs-5 mb-0 border-bottom">Follow us</h4>
+                        <h4 className="mt-2 fs-5 mb-0 border-bottom" style={{ color: "orange" }}>Follow us</h4>
                         <Nav>
                             <Nav.Link href="/home" className="text-white fs-3" title="Facebook">
                                 <FaFacebook className="btn-outline-light rounded p-1" />
@@ -64,7 +63,7 @@ const Footer = () =>
                         </Nav>
                     </Nav>
                     <Nav className='flex-column align-items-center'>
-                        <h4 className="text-white fs-5 mb-3">We accept</h4>
+                        <h4 className="fs-5 mb-3" style={{ color: "orange" }}>We accept</h4>
                         <Image src={stripe} width="300px" alt="" fluid />
                     </Nav>
                 </Container>
