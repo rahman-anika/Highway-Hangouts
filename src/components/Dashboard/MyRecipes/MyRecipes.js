@@ -68,7 +68,7 @@ const MyRecipes = () => {
                         <div className="col-md-6 col-lg-4">
                             <div className="cart border border p-2 m-2">
 
-                                <h4>{order?.name}</h4>
+                                <h4>{order?.name.slice(0, 17)}..</h4>
                                 <h6>Category: {order?.category}</h6>
                                 <h5>Posted By: </h5>
                                 <h5>{order?.username}</h5>
