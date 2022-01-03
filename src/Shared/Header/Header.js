@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Image, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { HashLink } from 'react-router-hash-link';
+// import logo from './../../images/logo/logo.png';
 
 const Header = () => {
 
@@ -15,9 +16,20 @@ const Header = () => {
                 <Container>
 
                     {/* website name and icon starts */}
-                    <Navbar.Brand href="#home">
+                    {/* <Navbar.Brand href="#home">
                         <span style={{ color: 'orange', fontWeight: 'bold' }}> <i class="fas fa-utensils"></i> Highway Hangouts</span>
-                    </Navbar.Brand>
+                    </Navbar.Brand> */}
+
+                    <Nav className="flex-column align-items-center my-3">
+                        <Navbar.Brand href="/home" className="mx-auto">
+                            <Image src="" width="180px" alt="" fluid />
+                        </Navbar.Brand>
+                        <div className="my-2 text-white">
+                            {/* <FaQuoteRight className='fs-3' />&nbsp; Making moments special... */}
+                        </div>
+                    </Nav>
+
+
                     {/* website name and icon ends */}
 
                     {/* routing hashlink starts */}
