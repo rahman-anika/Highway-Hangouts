@@ -1,0 +1,10 @@
+.menu-btn{
+    padding: 30px;
+    background: #F94910;
+    border: none;
+    margin: 5px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 8px;
+}

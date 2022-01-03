@@ -1,14 +1,15 @@
 import React from 'react';
-import { Container,Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import "./Menu.css";
 
 const menu = () => {
     return (
         <>
             <Container>
-             <Link to="/allbreakfast"><Button variant="secondary">Breakfast</Button></Link>
-            <Button variant="success">Lunch</Button>
-            <Button variant="secondary">Dinner</Button>
+             <Link to="/allbreakfast"><button className="menu-btn" >Breakfast</button></Link>
+            <button className="menu-btn" variant="success">Lunch</button>
+            <button className="menu-btn" variant="secondary">Dinner</button>
            </Container>
         </>
     );
