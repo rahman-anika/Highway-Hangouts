@@ -10,9 +10,10 @@ import Swal from 'sweetalert2';
 
 function Confirm ()
 {
-    const [reservation, setReservation] = useState({})
+    const [reservation, setReservation] = useState({});
+
     const location = useLocation();
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     useEffect(() =>
     {
@@ -21,12 +22,37 @@ function Confirm ()
 
     const onSubmit = data =>
     {
-        console.log(data);
-        Swal.fire(
-            'Thank You!',
-            `Your table booking has been confirmed at ${reservation.time} on ${reservation.date}.`,
-            'success'
-        )
+        let book = data;
+        if (data.guest_number === '') {
+            book['booking_date'] = reservation.date;
+            book['booking_time'] = reservation.time;
+            book['guest_number'] = reservation.guest;
+        }
+        else {
+            book['booking_date'] = reservation.date;
+            book['booking_time'] = reservation.time;
+        }
+
+        fetch('http://localhost:5000/booking', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(book)
+        })
+            .then(res => res.json())
+            .then(data =>
+            {
+                if (data.insertedId) {
+                    Swal.fire(
+                        'Thank You!',
+                        `Your table booking has been confirmed at ${reservation.time} on ${reservation.date}.`,
+                        'success'
+                    );
+                    reset();
+                    console.log(book);
+                };
+            });
     };
 
     return (
@@ -58,18 +84,18 @@ function Confirm ()
 
                         <Form.Group className="mb-3" controlId="formGridAddress1">
                             <Form.Label>Add special request</Form.Label>
-                            <Form.Control {...register("request")} placeholder="If you have any special requirement. Please tell us..." required />
+                            <Form.Control {...register("request")} placeholder="If you have any special requirement. Please tell us..." />
                         </Form.Group>
 
                         <Row className="mb-3">
                             <Form.Group as={Col} controlId="formGridCity">
                                 <Form.Label>Booking Date</Form.Label>
-                                <Form.Control {...register("booking_date")} defaultValue={reservation.date} required />
+                                <Form.Control {...register("booking_date")} defaultValue={reservation.date} readOnly />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridState">
                                 <Form.Label>Booking Time</Form.Label>
-                                <Form.Control {...register("booking_time")} defaultValue={reservation.time} required />
+                                <Form.Control {...register("booking_time")} defaultValue={reservation.time} readOnly />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridZip">
