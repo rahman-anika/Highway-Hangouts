@@ -15,6 +15,7 @@ import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import "./Dashboard.css";
 import MyRecipes from "../MyRecipes/MyRecipes";
 import MyCredits from "../MyCredits/MyCredits";
+import MyBooking from '../MyBooking/MyBooking';
 import ManageRecipes from "../ManageRecipes/ManageRecipes";
 
 
@@ -108,7 +109,7 @@ const Dashboard = () => {
                             </Route>
 
                             <Route exact path={`${path}/my-booking`}>
-                                {/* <MyBooking></MyBooking> */}
+                                <MyBooking></MyBooking>
                             </Route>
 
 
