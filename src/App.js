@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import NotFound from './NotFound/NotFound';
 import AuthProvider from './contexts/AuthProvider';
+import AllLunch from './components/Menu/AllLunch/AllLunch';
 
 function App() {
   return (
@@ -36,7 +37,12 @@ function App() {
             <Route path="/register">
               {/* <Register></Register> */}
             </Route>
-
+            <Route path="/AllLunch">
+           <AllLunch/>
+          </Route>
+            <Route path="/booking/:id">
+          {/* <BookingInfo/> */}
+          </Route>
 
 
 
