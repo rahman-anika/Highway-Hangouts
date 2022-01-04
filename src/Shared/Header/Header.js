@@ -39,7 +39,7 @@ const Header = () =>
                         {/* homepage section ends */}
 
                         {/* services section starts */}
-                        <Nav.Link as={HashLink} to="/home#recipes"><span style={{ color: 'orange', fontWeight: 'bold' }}> Recipes </span></Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#recipes"><span style={{ color: 'orange', fontWeight: 'bold' }}> Make Reservation </span></Nav.Link>
                         {/* services section ends */}
 
                         {/* services section starts */}
