@@ -9,6 +9,7 @@ import Login from './Login/Login/Login';
 import Register from './Login/Register/Register';
 import AllBreakfast from './components/Menu/AllBreakfast/AllBreakfast';
 import AllLunch from './components/Menu/AllLunch/AllLunch';
+import AllDinner from './components/Menu/AllDinner/AllDinner';
 import AllRecipes from './components/AllRecipes/AllRecipes';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails';
 import SubmitRecipe from './components/SubmitRecipe/SubmitRecipe';
@@ -58,15 +59,18 @@ function App() {
             {/* Route for all breakfast  */}
             <Route path="/allbreakfast">
               <AllBreakfast></AllBreakfast>
-
             </Route>
 
             {/* Route for all lunch  */}
             <Route path="/alllunch">
               <AllLunch></AllLunch>
-
             </Route>
 
+
+            {/* Route for all dinner  */}
+            <Route path="/alldinner">
+              <AllDinner></AllDinner>
+            </Route>
 
             {/* Route for all recipes  */}
             <Route path="/recipes">
