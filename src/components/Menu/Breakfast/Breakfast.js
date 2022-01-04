@@ -15,7 +15,7 @@ const Breakfast = ({ breakfast }) => {
                         {details.slice(0, 69)}..
                     </Card.Text>
 
-                    <Link to={`/details/${_id}`}> <Button variant="success">Show Details</Button></Link>
+                    <Link to={`/breakfastDetails/${_id}`}> <Button variant="success">Show Details</Button></Link>
 
                 </Card.Body>
             </Card>

@@ -16,6 +16,9 @@ import SubmitRecipe from './components/SubmitRecipe/SubmitRecipe';
 import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
 import Confirm from './components/Reservation/Confirm';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
+import BreakfastDetails from './components/Menu/Breakfast/BreakfastDetails';
+import LunchDetails from './components/Menu/AllLunch/Lunch/LunchDetails';
+import DinnerDetails from './components/Menu/AllDinner/Dinner/DinnerDetails';
 
 
 
@@ -70,6 +73,22 @@ function App() {
             {/* Route for all dinner  */}
             <Route path="/alldinner">
               <AllDinner></AllDinner>
+            </Route>
+
+
+            {/* Route for showing recipe details  */}
+            <Route path="/breakfastDetails/:serviceId">
+              <BreakfastDetails></BreakfastDetails>
+            </Route>
+
+            {/* Route for showing recipe details  */}
+            <Route path="/lunchDetails/:serviceId">
+              <LunchDetails></LunchDetails>
+            </Route>
+
+            {/* Route for showing recipe details  */}
+            <Route path="/dinnerDetails/:serviceId">
+              <DinnerDetails></DinnerDetails>
             </Route>
 
             {/* Route for all recipes  */}
