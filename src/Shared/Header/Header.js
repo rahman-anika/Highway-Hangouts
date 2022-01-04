@@ -38,7 +38,7 @@ const Header = () => {
 
                     {/* routing hashlink starts */}
                     <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
+                    <Navbar.Collapse className="justify-content-end text-center">
 
                         {/* homepage section starts */}
                         <Nav.Link as={HashLink} to="/home#home"> <span style={{ color: 'orange', fontWeight: 'bold' }}> Home </span> </Nav.Link>

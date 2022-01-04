@@ -4,6 +4,7 @@ import logo from './../../images/logo/logo.png';
 import stripe from './../../images/logo/stripe.png';
 import { BsGeoAlt, BsEnvelope, BsTelephone } from "react-icons/bs";
 import { FaQuoteRight, FaFacebook, FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa";
+import { HashLink } from 'react-router-hash-link';
 
 /*------------------------------------------------------------------------- 
 Implement Footer of the Highway Hangouts with all necessary information, navigation, and contact info.
@@ -23,17 +24,17 @@ const Footer = () => {
                     </Nav>
                     <Nav className="flex-column text-center">
                         <h4 className="fs-5" style={{ color: "orange" }}>Links</h4>
-                        <Nav.Link to="/home" className="m-0 p-0">
+                        <Nav.Link as={HashLink} to="/home#home" className="m-0 p-0">
                             Home
                         </Nav.Link>
-                        <Nav.Link to="/home" className="m-0 p-0">
-                            Food Item
+                        <Nav.Link as={HashLink} to="/home#menu" className="m-0 p-0">
+                            Food Menu
                         </Nav.Link>
-                        <Nav.Link to="/home" className="m-0 p-0">
+                        <Nav.Link as={HashLink} to="/home#chefs" className="m-0 p-0">
                             Our Chef
                         </Nav.Link>
-                        <Nav.Link to="/home" className="m-0 p-0">
-                            Food Blogs
+                        <Nav.Link as={HashLink} to="/home#recipes" className="m-0 p-0">
+                            Recipes
                         </Nav.Link>
                         <Nav.Link to="/home" className="m-0 p-0">
                             FAQ
