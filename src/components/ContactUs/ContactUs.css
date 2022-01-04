@@ -1,0 +1,41 @@
+#contact { padding: 60px 0 ; background-color: #EAEAEA;}
+#map {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.contact-detail {
+    text-align: center;
+    margin: 0px 0;
+}
+.contact-detail i.fa {
+    text-align: center;
+    font-size: 30px;
+    background-color:orange;
+    color: #FFFFFF;
+    padding: 25px 0;
+    border-radius: 0;
+    border-top-left-radius: 0;
+    margin: 0 10px;
+    margin-right: 20px;
+    width: 82px;
+    height: 80px;
+    transition: background-color 0.5s;
+}
+.contact-detail:hover i.fa { background-color: #333333 }
+form#contact-form { padding: 40px 0 }
+.contact form#contact-form {padding: 0}
+.form-control:focus {
+    border-color: inherit;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#submit-btn{
+    background: orange;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-weight: 900;
+}
