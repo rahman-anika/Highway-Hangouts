@@ -65,6 +65,7 @@ const BookingInfo = () => {
                     <input {...register("number")} placeholder="phone number" />  <br /> <br />
                     <input className="button-regular" type="submit" />
                 </form>
+            <input type="email"/>
                     </Col>
                 </Row>
                 </Container> 
