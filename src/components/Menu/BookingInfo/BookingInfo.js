@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
+import useAuth from '../../../hooks/useAuth';
 
 const BookingInfo = () => {
     const { user } = useAuth();
@@ -24,9 +25,26 @@ const BookingInfo = () => {
     }
 
     useEffect(() => {
+
+        if (`http://localhost:5000/allbreakfast/${id}`) { 
             fetch(`http://localhost:5000/allbreakfast/${id}`)
             .then(res => res.json())
             .then(data => setBooking(data))
+        }
+
+        else if(`http://localhost:5000/AllLunch/${id}`) {
+            fetch(`http://localhost:5000/AllLunch/${id}`)
+            .then(res => res.json())
+            .then(data => setBooking(data))
+        }
+        else if(`http://localhost:5000/allDinner/${id}`) {
+            fetch(`http://localhost:5000/allDinner/${id}`)
+            .then(res => res.json())
+            .then(data => setBooking(data))
+        }
+            /* fetch(`http://localhost:5000/menuAll/${id}`)
+            .then(res => res.json())
+            .then(data => setBooking(data)) */
         
         // console.log(data)
     }, [])

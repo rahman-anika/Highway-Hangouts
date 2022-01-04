@@ -1,0 +1,20 @@
+[
+    {
+        "name":"Tofu Coconut Curry",
+        "price":"300",
+        "details":"As a secondary product of soymilk, it comes as no surprise then that tofu has no taste of its own. The overall taste is bland. It has a mild taste strikingly similar to beans. On its own and without forethought",
+        "img":"https://i.ibb.co/vhcRTF5/dinner1.png"
+    },
+    {
+        "name":"Teriyaki Chicken",
+        "price":"499",
+        "details":"Teriyaki Chicken is ready in about 10 minutes! Made with just basic 5 ingredients you probably have in the kitchen right now! If you like easy pasta salad recipes, you’re going to love today’s new recipe! ",
+        "img":"https://i.ibb.co/CMB4Jbn/dinner5.png"
+    },
+    {
+        "name":"Pesto Tortellini Salad",
+        "price":"550",
+        "details":"Pesto Tortellini Pasta Salad is ready in about 10 minutes! Made with just basic 5 ingredients you probably have in the kitchen right now! If you like easy pasta salad recipes, you are going to love today’s new recipe!",
+        "img":" https://i.ibb.co/jRjqdSc/dinner6.png"
+    }
+]

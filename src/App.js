@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import NotFound from './NotFound/NotFound';
 import AuthProvider from './contexts/AuthProvider';
 import AllLunch from './components/Menu/AllLunch/AllLunch';
+import AllDinner from './components/Menu/AllDinner/AllDinner';
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
             </Route>
             <Route path="/AllLunch">
            <AllLunch/>
+          </Route>
+            <Route path="/allDinner">
+           <AllDinner/>
           </Route>
             <Route path="/booking/:id">
           {/* <BookingInfo/> */}

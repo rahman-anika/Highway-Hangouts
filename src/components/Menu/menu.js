@@ -8,8 +8,8 @@ const menu = () => {
         <>
             <Container>
              <Link to="/allbreakfast"><button className="menu-btn" >Breakfast</button></Link>
-            <button className="menu-btn" variant="success">Lunch</button>
-            <button className="menu-btn" variant="secondary">Dinner</button>
+             <Link to="/AllLunch"><button className="menu-btn">Lunch</button></Link>
+            <Link to="/allDinner"><button className="menu-btn">Dinner</button></Link>
            </Container>
         </>
     );
