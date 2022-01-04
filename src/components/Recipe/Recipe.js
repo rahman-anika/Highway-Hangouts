@@ -76,7 +76,7 @@ const Recipe = () => {
             <div className="row">
 
                 {services.slice(0, 3)?.map((service) => (
-                    <div key={service._id} className="col-md-6 col-lg-4 col-sm-12">
+                    <div key={service._id} className="col-md-4 col-lg-4 col-sm-12">
                         <div className="cart service p-3 m-2 border border">
 
                             {/* image showing starts  */}
