@@ -35,7 +35,7 @@ function Confirm() {
             book['status'] = 'pending';
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://stark-savannah-40498.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

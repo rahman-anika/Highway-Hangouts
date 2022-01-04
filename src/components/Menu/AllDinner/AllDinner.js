@@ -9,7 +9,7 @@ const AllDinner = () => {
 
     const [allDinner, setDinner] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/alldinner')
+        fetch('https://stark-savannah-40498.herokuapp.com/alldinner')
             .then(res => res.json())
             .then(data => setDinner(data));
         // .then(data => console.log(data));

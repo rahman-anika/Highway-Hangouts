@@ -7,7 +7,7 @@ import Header from '../../../Shared/Header/Header';
 const AllLunch = () => {
     const [allLunch, setLunch] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/alllunch')
+        fetch('https://stark-savannah-40498.herokuapp.com/alllunch')
             .then(res => res.json())
             .then(data => setLunch(data));
         // .then(data => console.log(data));

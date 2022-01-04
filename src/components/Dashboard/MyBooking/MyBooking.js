@@ -8,7 +8,7 @@ function MyBooking() {
     const [bookingInfo, setBookingInfo] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/booking/${user.email}`)
+        fetch(`https://stark-savannah-40498.herokuapp.com/booking/${user.email}`)
             .then(res => res.json())
             .then(data => setBookingInfo(data))
     }, [user.email]);
@@ -24,7 +24,7 @@ function MyBooking() {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/booking/${id}`, {
+                fetch(`https://stark-savannah-40498.herokuapp.com/booking/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

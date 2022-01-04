@@ -16,7 +16,7 @@ const BreakfastDetails = () => {
 
     // data loading starts using Services.json file starts 
     useEffect(() => {
-        fetch('http://localhost:5000/allBreakfast')
+        fetch('https://stark-savannah-40498.herokuapp.com/allBreakfast')
             .then(res => res.json())
             .then(data => setData(data))
     }, []);

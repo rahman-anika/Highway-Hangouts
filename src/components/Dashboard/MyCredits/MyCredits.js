@@ -15,7 +15,7 @@ const MyCredits = () => {
     // load all orders by email query from database/server
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myRecipes/${email}`)
+        fetch(`https://stark-savannah-40498.herokuapp.com/myRecipes/${email}`)
             .then((res) => res.json())
             .then((data) => setRecipes(data));
     }, [email]);

@@ -14,7 +14,7 @@ const BookingInfo = () => {
     const [booking, setBooking] = useState({});
 
     const onSubmit = data => {
-        axios.post('http://localhost:5000/booking', data)
+        axios.post('https://stark-savannah-40498.herokuapp.com/booking', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {
@@ -25,7 +25,7 @@ const BookingInfo = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allbreakfast/${id}`)
+        fetch(`https://stark-savannah-40498.herokuapp.com/allbreakfast/${id}`)
             .then(res => res.json())
             .then(data => setBooking(data))
 

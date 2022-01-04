@@ -17,7 +17,7 @@ const LunchDetails = () => {
 
     // data loading starts using Services.json file starts 
     useEffect(() => {
-        fetch('http://localhost:5000/allLunch')
+        fetch('https://stark-savannah-40498.herokuapp.com/allLunch')
             .then(res => res.json())
             .then(data => setData(data))
     }, []);

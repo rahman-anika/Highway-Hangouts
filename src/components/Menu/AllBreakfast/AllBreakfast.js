@@ -7,7 +7,7 @@ import Breakfast from '../Breakfast/Breakfast';
 const AllBreakfast = () => {
     const [allBreakfast, setBreakfast] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/allbreakfast')
+        fetch('https://stark-savannah-40498.herokuapp.com/allbreakfast')
             .then(res => res.json())
             .then(data => setBreakfast(data));
         // .then(data => console.log(data));
