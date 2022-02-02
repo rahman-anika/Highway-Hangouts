@@ -3,33 +3,52 @@ import { Badge, Button, CloseButton, Container, Table } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import useAuth from '../../../hooks/useAuth';
 
+<<<<<<< HEAD
 function AllBooking ()
 {
+=======
+function AllBooking() {
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
     const [bookings, setBookings] = useState([]);
     const [trigger, setTrigger] = useState(false);
 
     const { user } = useAuth();
 
+<<<<<<< HEAD
     useEffect(() =>
     {
         fetch('http://localhost:5000/booking')
+=======
+    useEffect(() => {
+        fetch('https://stark-savannah-40498.herokuapp.com/booking')
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
             .then(res => res.json())
             .then(data => setBookings(data))
             .catch(error => console.log(error));
     }, [trigger]);
 
 
+<<<<<<< HEAD
     const handleUpdateStatus = id =>
     {
         const statusUpdate = { status: 'Confirmed' };
         fetch(`http://localhost:5000/booking/${id}`, {
+=======
+    const handleUpdateStatus = id => {
+        const statusUpdate = { status: 'Confirmed' };
+        fetch(`https://stark-savannah-40498.herokuapp.com/booking/${id}`, {
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
             method: 'PUT',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(statusUpdate)
         })
             .then(res => res.json())
+<<<<<<< HEAD
             .then(data =>
             {
+=======
+            .then(data => {
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
                 if (data.modifiedCount > 0) {
                     Swal.fire(
                         `Thank You, ${user.displayName}!`,
@@ -41,8 +60,12 @@ function AllBooking ()
             });
     };
 
+<<<<<<< HEAD
     const handleBookingDelete = id =>
     {
+=======
+    const handleBookingDelete = id => {
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
         Swal.fire({
             title: 'Are you sure, you want to DELETE the Booking?',
             text: "You won't be able to revert this!",
@@ -51,6 +74,7 @@ function AllBooking ()
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, delete it!'
+<<<<<<< HEAD
         }).then((result) =>
         {
             if (result.isConfirmed) {
@@ -60,6 +84,15 @@ function AllBooking ()
                     .then(res => res.json())
                     .then(data =>
                     {
+=======
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`https://stark-savannah-40498.herokuapp.com/booking/${id}`, {
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .then(data => {
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
                         if (data.deletedCount > 0) {
                             Swal.fire(
                                 'Deleted!',
@@ -129,4 +162,8 @@ function AllBooking ()
     )
 }
 
+<<<<<<< HEAD
 export default AllBooking
+=======
+export default AllBooking
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea

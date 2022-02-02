@@ -8,10 +8,26 @@ import AuthProvider from './contexts/AuthProvider';
 import Login from './Login/Login/Login';
 import Register from './Login/Register/Register';
 import AllBreakfast from './components/Menu/AllBreakfast/AllBreakfast';
+<<<<<<< HEAD
 import Confirm from './components/Reservation/Confirm';
 import Dashboard from './components/Dashboard/Dashboard';
 import AllBooking from './components/Dashboard/AllBooking/AllBooking';
 import MyBooking from './components/Dashboard/MyBooking/MyBooking';
+=======
+import AllLunch from './components/Menu/AllLunch/AllLunch';
+import AllDinner from './components/Menu/AllDinner/AllDinner';
+import AllRecipes from './components/AllRecipes/AllRecipes';
+import RecipeDetails from './components/RecipeDetails/RecipeDetails';
+import SubmitRecipe from './components/SubmitRecipe/SubmitRecipe';
+import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
+import Confirm from './components/Reservation/Confirm';
+import Dashboard from './components/Dashboard/Dashboard/Dashboard';
+import BreakfastDetails from './components/Menu/Breakfast/BreakfastDetails';
+import LunchDetails from './components/Menu/AllLunch/Lunch/LunchDetails';
+import DinnerDetails from './components/Menu/AllDinner/Dinner/DinnerDetails';
+
+
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
 
 function App ()
 {
@@ -48,10 +64,18 @@ function App ()
               <Register></Register>
             </Route>
 
+            {/* PrivateRoute for booking confirm  */}
+            <PrivateRoute path="/booking-confirm">
+              <Confirm></Confirm>
+            </PrivateRoute>
+
+
+            {/* Route for all breakfast  */}
             <Route path="/allbreakfast">
               <AllBreakfast></AllBreakfast>
             </Route>
 
+<<<<<<< HEAD
             <Route path="/dashboard">
               <Dashboard></Dashboard>
             </Route>
@@ -62,7 +86,56 @@ function App ()
 
             <Route path="/my-booking">
               <MyBooking></MyBooking>
+=======
+            {/* Route for all lunch  */}
+            <Route path="/alllunch">
+              <AllLunch></AllLunch>
             </Route>
+
+
+            {/* Route for all dinner  */}
+            <Route path="/alldinner">
+              <AllDinner></AllDinner>
+            </Route>
+
+
+            {/* Route for showing recipe details  */}
+            <Route path="/breakfastDetails/:serviceId">
+              <BreakfastDetails></BreakfastDetails>
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
+            </Route>
+
+            {/* Route for showing recipe details  */}
+            <Route path="/lunchDetails/:serviceId">
+              <LunchDetails></LunchDetails>
+            </Route>
+
+            {/* Route for showing recipe details  */}
+            <Route path="/dinnerDetails/:serviceId">
+              <DinnerDetails></DinnerDetails>
+            </Route>
+
+            {/* Route for all recipes  */}
+            <Route path="/recipes">
+              <AllRecipes></AllRecipes>
+            </Route>
+
+            {/* PrivateRoute for adding recipe  */}
+            <PrivateRoute path="/submitRecipe">
+              <SubmitRecipe></SubmitRecipe>
+            </PrivateRoute>
+
+
+            {/* Route for showing recipe details  */}
+            <Route path="/recipeDetails/:serviceId">
+              <RecipeDetails></RecipeDetails>
+            </Route>
+
+
+            {/* PrivateRoute for adding recipe  */}
+            <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
 
 
             {/* Route for 404  */}
