@@ -8,6 +8,12 @@ import AuthProvider from './contexts/AuthProvider';
 import Login from './Login/Login/Login';
 import Register from './Login/Register/Register';
 import AllBreakfast from './components/Menu/AllBreakfast/AllBreakfast';
+<<<<<<< HEAD
+import Confirm from './components/Reservation/Confirm';
+import Dashboard from './components/Dashboard/Dashboard';
+import AllBooking from './components/Dashboard/AllBooking/AllBooking';
+import MyBooking from './components/Dashboard/MyBooking/MyBooking';
+=======
 import AllLunch from './components/Menu/AllLunch/AllLunch';
 import AllDinner from './components/Menu/AllDinner/AllDinner';
 import AllRecipes from './components/AllRecipes/AllRecipes';
@@ -21,10 +27,12 @@ import LunchDetails from './components/Menu/AllLunch/Lunch/LunchDetails';
 import DinnerDetails from './components/Menu/AllDinner/Dinner/DinnerDetails';
 
 
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
 
-function App() {
+function App ()
+{
   return (
-    <div className="App">
+    <div>
       {/* Auth provider added */}
       <AuthProvider>
         <Router>
@@ -42,6 +50,9 @@ function App() {
               <Home></Home>
             </Route>
 
+            <Route path="/booking-confirm">
+              <Confirm />
+            </Route>
 
             {/* Route for login  */}
             <Route path="/login">
@@ -64,6 +75,18 @@ function App() {
               <AllBreakfast></AllBreakfast>
             </Route>
 
+<<<<<<< HEAD
+            <Route path="/dashboard">
+              <Dashboard></Dashboard>
+            </Route>
+
+            <Route path="/all-booking">
+              <AllBooking></AllBooking>
+            </Route>
+
+            <Route path="/my-booking">
+              <MyBooking></MyBooking>
+=======
             {/* Route for all lunch  */}
             <Route path="/alllunch">
               <AllLunch></AllLunch>
@@ -79,6 +102,7 @@ function App() {
             {/* Route for showing recipe details  */}
             <Route path="/breakfastDetails/:serviceId">
               <BreakfastDetails></BreakfastDetails>
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
             </Route>
 
             {/* Route for showing recipe details  */}

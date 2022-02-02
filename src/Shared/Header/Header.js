@@ -5,7 +5,8 @@ import useAuth from '../../hooks/useAuth';
 import { HashLink } from 'react-router-hash-link';
 import logo from './../../images/logo/logo.png';
 
-const Header = () => {
+const Header = () =>
+{
 
     const { user, logout } = useAuth();
 
@@ -17,6 +18,12 @@ const Header = () => {
 
                     {/* website name and icon starts */}
 
+<<<<<<< HEAD
+                    <Nav className="flex-column align-items-center">
+                        <Navbar.Brand href="#home" className="mx-auto">
+                            <Image src={logo} width="180px" alt="" fluid />
+                        </Navbar.Brand>
+=======
 
                     {/* <Nav className="flex-column align-items-center my-3">
                         <Navbar.Brand href="#home" className="mx-auto">
@@ -31,6 +38,7 @@ const Header = () => {
                         <Navbar.Brand href="#home" className="mx-auto">
                             <Image src={logo} width="180px" alt="" fluid />
                         </Navbar.Brand>
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
                     </Nav>
 
 
@@ -44,6 +52,12 @@ const Header = () => {
                         <Nav.Link as={HashLink} to="/home#home"> <span style={{ color: 'orange', fontWeight: 'bold' }}> Home </span> </Nav.Link>
                         {/* homepage section ends */}
 
+<<<<<<< HEAD
+                        {/* services section starts */}
+                        <Nav.Link as={HashLink} to="/home#recipes"><span style={{ color: 'orange', fontWeight: 'bold' }}> Make Reservation </span></Nav.Link>
+                        {/* services section ends */}
+=======
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
 
                         {/* make reservation section starts */}
                         <Nav.Link as={HashLink} to="/home#makeReservation"><span style={{ color: 'orange', fontWeight: 'bold' }}> Make Reservation </span></Nav.Link>
@@ -112,9 +126,12 @@ const Header = () => {
                             <Nav.Link as={Link} to="/login"><span style={{ color: 'orange', fontWeight: 'bold' }}> Login </span></Nav.Link>
                         }
 
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
 
                     </Navbar.Collapse>
                     {/* routing hashlink ends */}

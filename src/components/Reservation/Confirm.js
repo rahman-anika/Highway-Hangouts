@@ -9,7 +9,12 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Swal from 'sweetalert2';
 import useAuth from '../../hooks/useAuth';
 
+<<<<<<< HEAD
+function Confirm ()
+{
+=======
 function Confirm() {
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
     const { user } = useAuth();
     const [reservation, setReservation] = useState({});
 
@@ -17,11 +22,21 @@ function Confirm() {
 
     const location = useLocation();
 
+<<<<<<< HEAD
+    useEffect(() =>
+    {
+        setReservation(location.state.data)
+    }, [location]);
+
+    const onSubmit = data =>
+    {
+=======
     useEffect(() => {
         setReservation(location.state.data)
     }, [location]);
 
     const onSubmit = data => {
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
         let book = data;
         if (data.guest_number === '') {
             book['booking_date'] = reservation.date;
@@ -35,7 +50,11 @@ function Confirm() {
             book['status'] = 'pending';
         }
 
+<<<<<<< HEAD
+        fetch('http://localhost:5000/booking', {
+=======
         fetch('https://stark-savannah-40498.herokuapp.com/booking', {
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -43,7 +62,12 @@ function Confirm() {
             body: JSON.stringify(book)
         })
             .then(res => res.json())
+<<<<<<< HEAD
+            .then(data =>
+            {
+=======
             .then(data => {
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
                 if (data.insertedId) {
                     Swal.fire(
                         `Thank You, ${user.displayName}!`,
@@ -121,4 +145,8 @@ function Confirm() {
     )
 }
 
+<<<<<<< HEAD
 export default Confirm
+=======
+export default Confirm
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea

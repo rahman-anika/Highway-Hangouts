@@ -4,11 +4,21 @@ import { useForm } from "react-hook-form";
 import { useHistory } from 'react-router-dom';
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
+<<<<<<< HEAD
+function Booking ()
+{
+    const { register, handleSubmit } = useForm();
+    const history = useHistory();
+
+    const onSubmit = data =>
+    {
+=======
 function Booking() {
     const { register, handleSubmit } = useForm();
     const history = useHistory();
 
     const onSubmit = data => {
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
         history.push(
             {
                 pathname: '/booking-confirm',
@@ -18,7 +28,11 @@ function Booking() {
     };
 
     return (
+<<<<<<< HEAD
+        <>
+=======
         <div id="makeReservation">
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
             <h2 style={{ color: "orange" }} className='text-center mt-4'>
                 <FaQuoteLeft className='fs-4' />
                 &nbsp;&nbsp;Book your Table with Highway Hangouts&nbsp;&nbsp;
@@ -53,8 +67,16 @@ function Booking() {
                     </Container>
                 </Navbar>
             </div>
+<<<<<<< HEAD
+        </>
+    )
+}
+
+export default Booking
+=======
         </div>
     )
 }
 
 export default Booking
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea

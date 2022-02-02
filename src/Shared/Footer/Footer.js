@@ -24,7 +24,11 @@ const Footer = () => {
                     </Nav>
                     <Nav className="flex-column text-center">
                         <h4 className="fs-5" style={{ color: "orange" }}>Links</h4>
+<<<<<<< HEAD
+                        <Nav.Link to="/home" className="m-0 p-0">
+=======
                         <Nav.Link as={HashLink} to="/home#home" className="m-0 p-0">
+>>>>>>> 0ac96804b02c890b274f4c64d1e80c4d36f7bfea
                             Home
                         </Nav.Link>
                         <Nav.Link as={HashLink} to="/home#menu" className="m-0 p-0">
